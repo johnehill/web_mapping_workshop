@@ -12,7 +12,7 @@ var map = L.mapbox.map('map', mapId);
 map.setView([39, -96], 4);
 
 /////////Add Data  jeh
-var dataFileToAdd = 'data/restaurants.geojson';
+var dataFileToAdd = 'data/statewidetrail.geojson';
 
 var featureLayer = L.mapbox.featureLayer();
      featureLayer.loadURL(dataFileToAdd);
