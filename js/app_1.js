@@ -12,18 +12,18 @@ var map = L.mapbox.map('map', mapId);
 map.setView([39, -96], 4);
 
 /////////Add Data  jeh
-var dataFileToAdd = 'data/statewidetrail.geojson';
+// var dataFileToAdd = 'data/statewidetrail.geojson';
 
-var featureLayer = L.mapbox.featureLayer();
-     featureLayer.loadURL(dataFileToAdd);
-     featureLayer.addTo(map);
+// var featureLayer = L.mapbox.featureLayer();
+//      featureLayer.loadURL(dataFileToAdd);
+//      featureLayer.addTo(map);
      
-featureLayer.on('ready', function(){
-  this.setStyle({
-    "marker-color": "#777777,"
-    "marker-size": "medium"
-  });
-  map.fitBounds(featureLayer.getBounds());
-});
+// featureLayer.on('ready', function(){
+//   this.setStyle({
+//    "marker-color": "#777777,"
+//    "marker-size": "medium"
+//   });
+//   map.fitBounds(featureLayer.getBounds());
+// });
 
-////////////////////////////////
+// ////////////////////////////////
