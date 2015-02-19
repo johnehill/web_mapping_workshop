@@ -18,11 +18,12 @@ var featureLayer = L.mapbox.featureLayer();
      featureLayer.loadURL(dataFileToAdd);
      featureLayer.addTo(map);
      
-featureLayer.on('ready') function(){
+featureLayer.on('ready', function(){
   this.setStyle({
     "marker-color": "#777777"
     "marker-size": "medium"
   });
-  map.fitBounds(featureLayer.getBounds());
+  map.fitBounds(featureLayer.getBounds();
+});
 
 ////////////////////////////////
