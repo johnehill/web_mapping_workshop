@@ -16,10 +16,13 @@ var dataFileToAdd = 'data/mytrail.geojson';
 var featureLayer = L.mapbox.featureLayer();
       featureLayer.loadURL(dataFileToAdd);
       featureLayer.addTo(map);
-     
+var dataFileToAdd2 = 'data/pointsjeh.geojson';
+var featureLayer2 = L.mapbox.featureLayer();
+      featureLayer2.loadURL(dataFileToAdd);
+      featureLayer2.addTo(map);
 featureLayer.on('ready', function(){
   this.setStyle({
-    "marker-color": "#99999",
+    "marker-color": "#777777",
     "marker-size": "medium"
    });
    map.fitBounds(featureLayer.getBounds());
