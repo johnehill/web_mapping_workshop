@@ -19,7 +19,7 @@ var featureLayer = L.mapbox.featureLayer();
      
 featureLayer.on('ready', function(){
   this.setStyle({
-    "marker-color": "#777777",
+    "marker-color": "#99999",
     "marker-size": "medium"
    });
    map.fitBounds(featureLayer.getBounds());
